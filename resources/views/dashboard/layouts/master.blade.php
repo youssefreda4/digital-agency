@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
-    data-assets-path="{{ asset('merchant-assets') }}/" data-template="vertical-menu-template-free">
-@include('merchant.layouts.header')
+    data-assets-path="{{ asset('dashboard-assets') }}/" data-template="vertical-menu-template-free">
+@include('dashboard.layouts.header')
 
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
-            @include('merchant.layouts.aside')
+            @include('dashboard.layouts.aside')
 
             <!-- Layout container -->
             <div class="layout-page">
-                @include('merchant.layouts.nav')
+                @include('dashboard.layouts.nav')
 
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
@@ -20,7 +20,7 @@
                     @yield('content')
                     <!-- / Content -->
 
-                    @include('merchant.layouts.footer')
+                    @include('dashboard.layouts.footer')
 
                     <div class="content-backdrop fade"></div>
                 </div>
@@ -32,7 +32,7 @@
         <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
-    @include('merchant.layouts.script')
+    @include('dashboard.layouts.script')
 </body>
 
 </html>

@@ -1,14 +1,17 @@
 <?php
 
+use App\Http\Controllers\Dashboard\Auth\AuthController;
+use App\Http\Controllers\Dashboard\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
 
 Route::prefix('dashboard')->name('dashboard.')->group(function () {
-    Route::view('/', 'dashboard.pages.index')->name('index');
+    Route::middleware('admin')->group(function () {
+        Route::get('/', [HomeController::class, 'index'])->name('index');
+    });
 
+    Route::get('/login', [AuthController::class, 'index'])->middleware('guest:admin')->name('auth.login');
 
-
-    Route::view('/login', 'dashboard.auth.pages.login')->name('auth.login');
-    Route::view('/register', 'dashboard.auth.pages.register')->name('auth.register');
+    Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth:admin')->name('auth.logout');
 });

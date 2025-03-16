@@ -10,7 +10,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('merchant-assets') }}/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('dashboard-assets') }}/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,24 +21,24 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="{{ asset('merchant-assets') }}/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="{{ asset('dashboard-assets') }}/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="{{ asset('merchant-assets') }}/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="{{ asset('merchant-assets') }}/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="{{ asset('merchant-assets') }}/css/demo.css" />
+    <link rel="stylesheet" href="{{ asset('dashboard-assets') }}/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{ asset('dashboard-assets') }}/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{ asset('dashboard-assets') }}/css/demo.css" />
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="{{ asset('merchant-assets') }}/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="{{ asset('dashboard-assets') }}/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-    <link rel="stylesheet" href="{{ asset('merchant-assets') }}/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="{{ asset('dashboard-assets') }}/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="{{ asset('merchant-assets') }}/vendor/js/helpers.js"></script>
+    <script src="{{ asset('dashboard-assets') }}/vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="{{ asset('merchant-assets') }}/js/config.js"></script>
+    <script src="{{ asset('dashboard-assets') }}/js/config.js"></script>
   </head>
