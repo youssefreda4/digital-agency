@@ -20,7 +20,9 @@
                     @yield('content')
                     <!-- / Content -->
 
-                    @include('dashboard.layouts.footer')
+                    <!-- Footer -->
+                    {{-- @include('dashboard.layouts.footer') --}}
+                    <!-- / Footer -->
 
                     <div class="content-backdrop fade"></div>
                 </div>
