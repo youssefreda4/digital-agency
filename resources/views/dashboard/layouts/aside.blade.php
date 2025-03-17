@@ -84,6 +84,14 @@
                 <div data-i18n="Analytics">Settings</div>
             </a>
         </li>
+       
+        <!-- Skills -->
+        <li class="menu-item {{ activeLink('dashboard.skills') }}">
+            <a href="{{ route('dashboard.skills') }}" class="menu-link">
+                <i class='menu-icon bx bx-layer'></i>
+                <div data-i18n="Analytics">Skills</div>
+            </a>
+        </li>
 
     </ul>
 </aside>
