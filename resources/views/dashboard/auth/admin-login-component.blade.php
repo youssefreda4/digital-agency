@@ -27,16 +27,11 @@
     </div>
 
     <div class="mt-3">
-        <button class="btn btn-primary d-grid w-100" type="submit" >
-            <span wire:loading.remove wire:target='login'>
-                Sign in
-            </span>
-            <div class="text-center" wire:loading wire:target="login">
-                <span class=" spinner-border spinner-border-sm text-white" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </span>
-            </div>
-
+        <button class="btn btn-primary d-grid w-100" type="submit">
+            @include('dashboard.loading',[
+            'target' => 'login',
+            'name' => 'Sign in'
+            ])
         </button>
     </div>
 </form>

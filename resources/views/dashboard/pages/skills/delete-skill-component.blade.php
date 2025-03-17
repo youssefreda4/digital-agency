@@ -16,7 +16,12 @@
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                         Close
                     </button>
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">
+                        @include('dashboard.loading',[
+                        'target' => 'delete',
+                        'name' => 'Delete'
+                        ])
+                    </button>
                 </div>
             </form>
 

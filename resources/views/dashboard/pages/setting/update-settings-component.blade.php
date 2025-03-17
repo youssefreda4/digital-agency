@@ -71,14 +71,9 @@
     </div>
 
     <button class="btn btn-primary" type="submit">
-        <span wire:loading.remove wire:target='update'>
-            Update
-        </span>
-        <div class="text-center" wire:loading wire:target="update">
-            <span class=" spinner-border spinner-border-sm text-white" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </span>
-        </div>
-
+        @include('dashboard.loading',[
+            'target' => 'update',
+            'name' => 'Update'
+            ])
     </button>
 </form>

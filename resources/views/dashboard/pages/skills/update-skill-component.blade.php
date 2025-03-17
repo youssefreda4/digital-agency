@@ -16,8 +16,7 @@
                         </div>
                         <div class="col-md-6 mb-2">
                             <label class="form-label">Progress</label>
-                            <input type="number" class="form-control" placeholder="1 - 100"
-                                wire:model='progress' />
+                            <input type="number" class="form-control" placeholder="1 - 100" wire:model='progress' />
                             <x-input-error :messages="$errors->get('progress')" />
                         </div>
                     </div>
@@ -26,7 +25,12 @@
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                         Close
                     </button>
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">
+                        @include('dashboard.loading',[
+                        'target' => 'update',
+                        'name' => 'Update'
+                        ])
+                    </button>
                 </div>
             </form>
 
