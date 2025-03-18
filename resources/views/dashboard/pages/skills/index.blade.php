@@ -7,7 +7,8 @@
 <div class="content-wrapper">
     <!-- Content -->
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> Skills</h4>
+        <x-breadcrumbs-component pageName="Skills"></x-breadcrumbs-component>
+
         <!-- Create skill -->
         <div class="mb-3">
             <div class="col-lg-4 col-md-6">
