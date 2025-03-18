@@ -93,6 +93,14 @@
             </a>
         </li>
 
+        <!-- subscribers -->
+        <li class="menu-item {{ activeLink('dashboard.subscribers') }}">
+            <a href="{{ route('dashboard.subscribers') }}" class="menu-link">
+                <i class='menu-icon bx bx-user-pin'></i>
+                <div data-i18n="Analytics">Subscribers</div>
+            </a>
+        </li>
+
     </ul>
 </aside>
 <!-- / Menu -->
