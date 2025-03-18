@@ -109,6 +109,14 @@
             </a>
         </li>
 
+        <!-- Services -->
+        <li class="menu-item {{ activeLink('dashboard.services') }}">
+            <a href="{{ route('dashboard.services') }}" class="menu-link">
+                <i class='menu-icon bx bx-briefcase'></i>
+                <div data-i18n="Analytics">Services</div>
+            </a>
+        </li>
+
     </ul>
 </aside>
 <!-- / Menu -->

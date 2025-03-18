@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Counter;
+use App\Models\Service;
 use App\Models\Setting;
 use App\Models\Skill;
 use App\Models\Subscriber;
@@ -19,10 +20,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AdminSeeder::class,
-            Setting::class,
-            Skill::class,
-            Subscriber::class,
-            Counter::class,
+            SettingSeeder::class,
+            SkillSeeder::class,
+            SubscriberSeeder::class,
+            CounterSeeder::class,
+            ServiceSeeder::class,
         ]);
         
         // User::factory(10)->create();

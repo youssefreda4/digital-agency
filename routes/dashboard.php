@@ -3,6 +3,7 @@
 use App\Http\Controllers\Dashboard\Auth\AuthController;
 use App\Http\Controllers\Dashboard\Counter\CounterController;
 use App\Http\Controllers\Dashboard\HomeController;
+use App\Http\Controllers\Dashboard\Service\ServiceController;
 use App\Http\Controllers\Dashboard\Setting\SettingController;
 use App\Http\Controllers\Dashboard\Skill\SkillController;
 use App\Http\Controllers\Dashboard\Subscriber\SubscriberController;
@@ -14,22 +15,26 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
 Route::prefix('dashboard')->name('dashboard.')->group(function () {
     Route::middleware('admin')->group(function () {
-        //Home page
+        //HOME PAGE
         Route::get('/', [HomeController::class, 'index'])->name('index');
 
-        //Settings page
+        //SETTINGS PAGE
         Route::get('/settings', [SettingController::class, 'index'])->name('settings');
 
-        //Skills page
+        //SKILLS PAGE
         Route::get('/skills', [SkillController::class, 'index'])->name('skills');
 
-        //Subscriber page
+        //SUBSCIBERS PAGE
         Route::get('/subscribers', [SubscriberController::class, 'index'])->name('subscribers');
         
-        //Counter page
+        //COUNTER PAGE
         Route::get('/counters', [CounterController::class, 'index'])->name('counters');
+
+        //SERVICES PAGE
+        Route::get('/service', [ServiceController::class, 'index'])->name('services');
     });
 
     Route::get('/login', [AuthController::class, 'index'])->middleware('guest:admin')->name('auth.login');
