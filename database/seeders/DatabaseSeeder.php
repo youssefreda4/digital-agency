@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Counter;
 use App\Models\Setting;
 use App\Models\Skill;
 use App\Models\Subscriber;
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
             Setting::class,
             Skill::class,
             Subscriber::class,
+            Counter::class,
         ]);
         
         // User::factory(10)->create();

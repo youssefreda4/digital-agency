@@ -58,9 +58,9 @@
     <div class="menu-inner-shadow"></div>
 
     @php
-    function activeLink($route) {
-    if(request()->routeIs($route)) return 'active' ;
-    }
+        function activeLink($route) {
+        if(request()->routeIs($route)) return 'active' ;
+        }
     @endphp
 
     <ul class="menu-inner py-1">
@@ -98,6 +98,14 @@
             <a href="{{ route('dashboard.subscribers') }}" class="menu-link">
                 <i class='menu-icon bx bx-user-pin'></i>
                 <div data-i18n="Analytics">Subscribers</div>
+            </a>
+        </li>
+
+        <!-- Counters -->
+        <li class="menu-item {{ activeLink('dashboard.counters') }}">
+            <a href="{{ route('dashboard.counters') }}" class="menu-link">
+                <i class='menu-icon bx bx-line-chart'></i>
+                <div data-i18n="Analytics">counters</div>
             </a>
         </li>
 
