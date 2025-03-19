@@ -58,9 +58,9 @@
     <div class="menu-inner-shadow"></div>
 
     @php
-        function activeLink($route) {
-        if(request()->routeIs($route)) return 'active' ;
-        }
+    function activeLink($route) {
+    if(request()->routeIs($route)) return 'active' ;
+    }
     @endphp
 
     <ul class="menu-inner py-1">
@@ -84,7 +84,7 @@
                 <div data-i18n="Analytics">Settings</div>
             </a>
         </li>
-       
+
         <!-- Skills -->
         <li class="menu-item {{ activeLink('dashboard.skills') }}">
             <a href="{{ route('dashboard.skills') }}" class="menu-link">
@@ -128,16 +128,24 @@
         <!-- Categories -->
         <li class="menu-item {{ activeLink('dashboard.categories') }}">
             <a href="{{ route('dashboard.categories') }}" class="menu-link">
-                <i class='menu-icon bx bx-category' ></i>
+                <i class='menu-icon bx bx-category'></i>
                 <div data-i18n="Analytics">Categories</div>
             </a>
         </li>
-        
+
         <!-- Categories -->
         <li class="menu-item {{ activeLink('dashboard.projects') }}">
             <a href="{{ route('dashboard.projects') }}" class="menu-link">
                 <i class='menu-icon bx bx-folder-open'></i>
                 <div data-i18n="Analytics">Projects</div>
+            </a>
+        </li>
+
+        <!-- Newsletters -->
+        <li class="menu-item {{ activeLink('dashboard.newsletters') }}">
+            <a href="{{ route('dashboard.newsletters') }}" class="menu-link">
+                <i class='menu-icon bx bx-envelope'></i>
+                <div data-i18n="Analytics">Newsletters</div>
             </a>
         </li>
 

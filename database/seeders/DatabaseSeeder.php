@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Counter;
+use App\Models\Newsletter;
 use App\Models\Service;
 use App\Models\Setting;
 use App\Models\Skill;
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
             MessageSeeder::class,
             CategorySeeder::class,
             ProjectSeeder::class,
+            NewsletterSeeder::class,
         ]);
         
         // User::factory(10)->create();
