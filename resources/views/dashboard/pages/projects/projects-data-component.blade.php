@@ -35,7 +35,7 @@
                     <td>{{ $project->name }}</td>
                     <td>{{str()->limit($project->description, 10, '...') }}</td>
 
-                    <td> {{$project->link}} </td>
+                    <td> {{str()->limit($project->link ,10, '...') }} </td>
                     <td> {{$project->category->name}} </td>
 
                     {{-- <td>

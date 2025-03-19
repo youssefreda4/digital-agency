@@ -31,7 +31,7 @@
                 <tr>
                     <td>{{ $service->id }}</td>
                     <td>{{ $service->name }}</td>
-                    <td>{{str()->limit($service->description, 50, '...') }}</td>
+                    <td>{{str()->limit($service->description, 10, '...') }}</td>
 
                     <td> {{$service->icon}}</span></td>
 

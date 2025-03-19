@@ -97,6 +97,9 @@ class UpdateProjectComponent extends Component
 
             //Save image
             $data['image'] = 'storage/' . $this->imageInput->store('photos', 'public');
+        }else{
+            //Save new the image if is seeder with no image
+            $data['image'] = 'storage/' . $this->imageInput->store('photos', 'public');
         }
 
         //save data

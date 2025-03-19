@@ -20,7 +20,7 @@ class ProjectFactory extends Factory
         return [
             'name' => fake()->name(),
             'description' => fake()->paragraph(),
-            'link' => fake()->name(),
+            'link' =>'https://laravel.com/'.rand(1,10000),
             'category_id' => Category::factory()->create(),
         ];
     }
