@@ -117,6 +117,14 @@
             </a>
         </li>
 
+        <!-- Messages -->
+        <li class="menu-item {{ activeLink('dashboard.messages') }}">
+            <a href="{{ route('dashboard.messages') }}" class="menu-link">
+                <i class='menu-icon bx bx-chat'></i>
+                <div data-i18n="Analytics">Messages</div>
+            </a>
+        </li>
+
     </ul>
 </aside>
 <!-- / Menu -->
