@@ -125,6 +125,14 @@
             </a>
         </li>
 
+        <!-- Categories -->
+        <li class="menu-item {{ activeLink('dashboard.categories') }}">
+            <a href="{{ route('dashboard.categories') }}" class="menu-link">
+                <i class='menu-icon bx bx-category' ></i>
+                <div data-i18n="Analytics">Categories</div>
+            </a>
+        </li>
+
     </ul>
 </aside>
 <!-- / Menu -->

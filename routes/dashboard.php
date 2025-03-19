@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Dashboard\Auth\AuthController;
+use App\Http\Controllers\Dashboard\Category\CategoryController;
 use App\Http\Controllers\Dashboard\Counter\CounterController;
 use App\Http\Controllers\Dashboard\HomeController;
 use App\Http\Controllers\Dashboard\Message\MessageController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\Dashboard\Setting\SettingController;
 use App\Http\Controllers\Dashboard\Skill\SkillController;
 use App\Http\Controllers\Dashboard\Subscriber\SubscriberController;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -40,6 +42,9 @@ Route::prefix('dashboard')->name('dashboard.')->group(function () {
 
         //MESSAGES PAGE
         Route::get('/messages', [MessageController::class, 'index'])->name('messages');
+
+        //CATEGORIES PAGE
+        Route::get('/categories', [CategoryController::class, 'index'])->name('categories');
     });
 
     Route::get('/login', [AuthController::class, 'index'])->middleware('guest:admin')->name('auth.login');

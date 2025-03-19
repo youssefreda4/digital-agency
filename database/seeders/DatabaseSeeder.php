@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
             CounterSeeder::class,
             ServiceSeeder::class,
             MessageSeeder::class,
+            CategorySeeder::class,
         ]);
         
         // User::factory(10)->create();
