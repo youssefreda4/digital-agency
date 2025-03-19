@@ -13,4 +13,9 @@ class Category extends Model
     public $fillable = [
         'name',
     ];
+
+    public function projects()
+    {
+        return $this->hasMany(Project::class);
+    }
 }

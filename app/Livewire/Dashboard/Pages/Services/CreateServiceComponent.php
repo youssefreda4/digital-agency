@@ -12,7 +12,7 @@ class CreateServiceComponent extends Component
     protected function rules()
     {
         return [
-            'name' => 'required|string|unique:counters,name',
+            'name' => 'required|string|unique:services,name',
             'description' => 'required|string|min:10|max:1500',
             'icon' => 'required|string|min:1|max:100',
         ];
@@ -54,6 +54,7 @@ class CreateServiceComponent extends Component
         //refresh table
         $this->dispatch('refreshData')->to(ServicesDataComponent::class);
     }
+    
     public function render()
     {
         return view('dashboard.pages.services.create-service-component');

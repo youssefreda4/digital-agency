@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
             MessageSeeder::class,
             CategorySeeder::class,
+            ProjectSeeder::class,
         ]);
         
         // User::factory(10)->create();

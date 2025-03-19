@@ -6,7 +6,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <form wire:submit='create'>
+            <form wire:submit='create' enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="row">
                         {{ $slot }}
