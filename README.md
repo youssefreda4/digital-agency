@@ -91,12 +91,6 @@ The following modules use **Livewire** for real-time interactivity and CRUD oper
 - **Projects Module**: Upload and manage projects with images.
 - **Newsletters Module**: Send newsletters to subscribers.
 
-## Contributing
-Feel free to fork the repository and submit pull requests to improve the project.
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).
-
 ## Contact
 - **GitHub**: [youssefreda4](https://github.com/youssefreda4/digital-agency.git)
 - **Email**: youssefreda2003@gmail.com
