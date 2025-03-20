@@ -1,9 +1,9 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://livewire.laravel.com" target="_blank"><img src="https://livewire.laravel.com/img/logo.svg" width="400" alt="Livewire Logo"></a></p>
 
 # Digital Agency Website
 
 ## Project Overview
-The **Digital Agency Website** is a web application built using **Laravel** and **Livewire**. It provides an interactive and dynamic platform to showcase agency services, projects, testimonials, and more. The admin dashboard is also powered by **Livewire**, enabling real-time updates and CRUD operations.
+The **Digital Agency Website** is a web application built using **Laravel** and **Livewire**. It provides an interactive and dynamic platform to showcase agency services, projects, testimonials, and more. The admin dashboard is also powered by **Livewire**, enabling CRUD operations.
 
 ## Features
 - **Introductory Section**: Displays information about the agency.
@@ -28,7 +28,7 @@ The **Digital Agency Website** is a web application built using **Laravel** and 
 
 ### Prerequisites
 Ensure you have the following installed on your machine:
-- PHP (>= 8.0)
+- PHP (>= 8.2)
 - Composer
 - MySQL
 - Laravel (latest version)
@@ -98,8 +98,8 @@ Feel free to fork the repository and submit pull requests to improve the project
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
-For any issues or contributions, contact:
 - **GitHub**: [youssefreda4](https://github.com/youssefreda4/digital-agency.git)
 - **Email**: youssefreda2003@gmail.com
-- **Linkedin** : (https://www.linkedin.com/in/youssef-reda-5696b8300)
+- **LinkedIn**: [Youssef Reda](https://www.linkedin.com/in/youssef-reda-5696b8300)
+
 
