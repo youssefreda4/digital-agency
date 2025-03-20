@@ -101,4 +101,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 For any issues or contributions, contact:
 - **GitHub**: [youssefreda4](https://github.com/youssefreda4/digital-agency.git)
 - **Email**: youssefreda2003@gmail.com
+- **Linkedin** : (https://www.linkedin.com/in/youssef-reda-5696b8300)
 
