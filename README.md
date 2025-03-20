@@ -13,7 +13,7 @@ The **Digital Agency Website** is a web application built using **Laravel** and 
 - **Testimonials**: Displays client feedback.
 - **Subscribers**: Users can subscribe to newsletters.
 - **Dashboard Modules (Admin Panel using Livewire)**:
-  - Authentication (Login/Register using Livewire)
+  - Authentication (Login Dahboard using Livewire)
   - Settings Management
   - Skills Management
   - Subscribers Management
